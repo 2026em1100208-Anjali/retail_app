@@ -124,7 +124,7 @@ def reset_filters():
 @st.cache_data
 def load_data():
 
-    filepath = os.path.join(os.getcwd(), "data", "cleaned_integrated_dataset.csv")
+    filepath = os.path.join(os.getcwd(), "cleaned_integrated_dataset.csv")
     raw = pd.read_csv(filepath)
 
     required = [
